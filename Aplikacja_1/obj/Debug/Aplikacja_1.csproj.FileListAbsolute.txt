@@ -1,0 +1,30 @@
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\obj\Debug\Aplikacja_1.csprojAssemblyReference.cache
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\obj\Debug\Aplikacja_1.Form1.resources
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\obj\Debug\Aplikacja_1.Properties.Resources.resources
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\obj\Debug\Aplikacja_1.csproj.GenerateResource.cache
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\obj\Debug\Aplikacja_1.csproj.CoreCompileInputs.cache
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\bin\Debug\Aplikacja_1.exe.config
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\bin\Debug\Aplikacja_1.exe
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\bin\Debug\Aplikacja_1.pdb
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\obj\Debug\Aplikacja_1.exe
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\obj\Debug\Aplikacja_1.pdb
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\obj\Debug\Aplikacja_1.drugaczesc.resources
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\bin\Debug\EntityFramework.dll
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\bin\Debug\EntityFramework.xml
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zuzar\Desktop\sql laborki\23\Aplikacja_1\Aplikacja_1\obj\Debug\Aplikacja_1.csproj.CopyComplete
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\bin\Debug\Aplikacja_1.exe.config
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\bin\Debug\Aplikacja_1.exe
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\bin\Debug\Aplikacja_1.pdb
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\bin\Debug\EntityFramework.xml
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\obj\Debug\Aplikacja_1.csprojAssemblyReference.cache
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\obj\Debug\Aplikacja_1.drugaczesc.resources
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\obj\Debug\Aplikacja_1.Form1.resources
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\obj\Debug\Aplikacja_1.Properties.Resources.resources
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\obj\Debug\Aplikacja_1.csproj.GenerateResource.cache
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\obj\Debug\Aplikacja_1.csproj.CoreCompileInputs.cache
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\obj\Debug\Aplikacja_1.csproj.CopyComplete
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\obj\Debug\Aplikacja_1.exe
+C:\Users\Kamil\Desktop\Laboratorium\Aplikacja_1\obj\Debug\Aplikacja_1.pdb
