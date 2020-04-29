@@ -12,13 +12,15 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Proces_Zamowienie
+    public partial class Zamowienia_Przydzial
     {
-        public int ID_Proces_Zamowienie { get; set; }
-        public int ID_Proces_Technologiczny { get; set; }
-        public int ID_Zamowienie_Produkt { get; set; }
+        public int ID_Zamowienia_Przydzial { get; set; }
+        public Nullable<int> ID_Zamowienia { get; set; }
+        public Nullable<int> ID_Pracownicy { get; set; }
+        public Nullable<int> ID_Umowy { get; set; }
     
-        public virtual Proces_Technologiczny Proces_Technologiczny { get; set; }
-        public virtual Zamowienie_Produkt Zamowienie_Produkt { get; set; }
+        public virtual Pracownicy Pracownicy { get; set; }
+        public virtual Umowy_Kurierzy Umowy_Kurierzy { get; set; }
+        public virtual Zamowienia Zamowienia { get; set; }
     }
 }

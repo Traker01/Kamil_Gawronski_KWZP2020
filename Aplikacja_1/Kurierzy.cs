@@ -12,21 +12,21 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Dostawcy_Zaopatrzenie
+    public partial class Kurierzy
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Magazyn_Dostawcy_Zaopatrzenie()
+        public Kurierzy()
         {
-            this.Magazyn_Oferta = new HashSet<Magazyn_Oferta>();
+            this.Umowy_Kurierzy = new HashSet<Umowy_Kurierzy>();
         }
     
-        public string ID_Dostawcy { get; set; }
+        public int ID_Kurier { get; set; }
         public string Nazwa { get; set; }
         public Nullable<int> Telefon_1 { get; set; }
         public Nullable<int> Telefon_2 { get; set; }
         public string Email { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Magazyn_Oferta> Magazyn_Oferta { get; set; }
+        public virtual ICollection<Umowy_Kurierzy> Umowy_Kurierzy { get; set; }
     }
 }

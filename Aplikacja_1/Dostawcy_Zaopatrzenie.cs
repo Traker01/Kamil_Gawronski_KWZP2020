@@ -12,21 +12,21 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Elementy_Jednostki
+    public partial class Dostawcy_Zaopatrzenie
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Magazyn_Elementy_Jednostki()
+        public Dostawcy_Zaopatrzenie()
         {
-            this.Magazyn_Elementy = new HashSet<Magazyn_Elementy>();
-            this.Material_Na_Produkcji = new HashSet<Material_Na_Produkcji>();
+            this.Oferta = new HashSet<Oferta>();
         }
     
-        public int ID_jednostka { get; set; }
-        public string Jednostka { get; set; }
+        public int ID_Dostawcy { get; set; }
+        public string Nazwa { get; set; }
+        public Nullable<int> Telefon_1 { get; set; }
+        public Nullable<int> Telefon_2 { get; set; }
+        public string Email { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Magazyn_Elementy> Magazyn_Elementy { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Material_Na_Produkcji> Material_Na_Produkcji { get; set; }
+        public virtual ICollection<Oferta> Oferta { get; set; }
     }
 }

@@ -12,20 +12,20 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Polki_Rozmiary
+    public partial class Polki_Rozmiary
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Magazyn_Polki_Rozmiary()
+        public Polki_Rozmiary()
         {
-            this.Magazyn_Polki = new HashSet<Magazyn_Polki>();
+            this.Polki = new HashSet<Polki>();
         }
     
-        public string ID_Rozmiar_Polki { get; set; }
+        public int ID_Rozmiar_Polki { get; set; }
         public Nullable<int> Wysokosc { get; set; }
         public Nullable<int> Szerokosc { get; set; }
         public Nullable<int> Glebokosc { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Magazyn_Polki> Magazyn_Polki { get; set; }
+        public virtual ICollection<Polki> Polki { get; set; }
     }
 }

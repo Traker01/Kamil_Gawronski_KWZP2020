@@ -12,25 +12,24 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Zamowienie_Produkt
+    public partial class Elementy_Jednostki
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Zamowienie_Produkt()
+        public Elementy_Jednostki()
         {
-            this.Proces_Produkcyjny = new HashSet<Proces_Produkcyjny>();
-            this.Proces_Zamowienie = new HashSet<Proces_Zamowienie>();
+            this.Elementy = new HashSet<Elementy>();
+            this.Elementy_Cechy = new HashSet<Elementy_Cechy>();
+            this.Material_Na_Produkcji = new HashSet<Material_Na_Produkcji>();
         }
     
-        public int ID_Zamowienie_Produkt { get; set; }
-        public Nullable<int> ID_Zamowienia { get; set; }
-        public Nullable<int> ID_Produkt { get; set; }
-        public int Ilosc { get; set; }
+        public int ID_jednostka { get; set; }
+        public string Jednostka { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Proces_Produkcyjny> Proces_Produkcyjny { get; set; }
+        public virtual ICollection<Elementy> Elementy { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Proces_Zamowienie> Proces_Zamowienie { get; set; }
-        public virtual Produkt Produkt { get; set; }
-        public virtual Zamowienia Zamowienia { get; set; }
+        public virtual ICollection<Elementy_Cechy> Elementy_Cechy { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material_Na_Produkcji> Material_Na_Produkcji { get; set; }
     }
 }

@@ -12,25 +12,27 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Zamowienie_Produkt
+    public partial class Zamowienia_Dostawy
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Zamowienie_Produkt()
+        public Zamowienia_Dostawy()
         {
-            this.Proces_Produkcyjny = new HashSet<Proces_Produkcyjny>();
-            this.Proces_Zamowienie = new HashSet<Proces_Zamowienie>();
+            this.Dostarczenia_Wewn = new HashSet<Dostarczenia_Wewn>();
+            this.Dostawy_Zawartosc = new HashSet<Dostawy_Zawartosc>();
+            this.Zawartosc = new HashSet<Zawartosc>();
         }
     
-        public int ID_Zamowienie_Produkt { get; set; }
+        public int ID_Dostawy { get; set; }
         public Nullable<int> ID_Zamowienia { get; set; }
-        public Nullable<int> ID_Produkt { get; set; }
-        public int Ilosc { get; set; }
+        public Nullable<System.DateTime> Data_Dostawy_Planowana { get; set; }
+        public Nullable<System.DateTime> Data_Dostawy_Rzeczywista { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Proces_Produkcyjny> Proces_Produkcyjny { get; set; }
+        public virtual ICollection<Dostarczenia_Wewn> Dostarczenia_Wewn { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Proces_Zamowienie> Proces_Zamowienie { get; set; }
-        public virtual Produkt Produkt { get; set; }
+        public virtual ICollection<Dostawy_Zawartosc> Dostawy_Zawartosc { get; set; }
         public virtual Zamowienia Zamowienia { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Zawartosc> Zawartosc { get; set; }
     }
 }

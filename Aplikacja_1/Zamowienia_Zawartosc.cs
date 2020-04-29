@@ -12,9 +12,14 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Elementy_Cechy_Slownik
+    public partial class Zamowienia_Zawartosc
     {
-        public int ID_Cecha { get; set; }
-        public string Cecha { get; set; }
+        public int ID_Zamowienia_Zawartosc { get; set; }
+        public Nullable<int> ID_Zamowienia { get; set; }
+        public Nullable<int> ID_Oferta { get; set; }
+        public Nullable<int> Ilosc_Zamawiana { get; set; }
+    
+        public virtual Oferta Oferta { get; set; }
+        public virtual Zamowienia Zamowienia { get; set; }
     }
 }

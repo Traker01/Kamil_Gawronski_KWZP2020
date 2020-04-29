@@ -14,6 +14,7 @@ namespace Aplikacja_1
     
     public partial class Etapy_W_Procesie
     {
+        public int ID_Etapy_W_Procesie { get; set; }
         public int ID_Proces_Technologiczny { get; set; }
         public int ID_Etapu { get; set; }
         public int Czas { get; set; }

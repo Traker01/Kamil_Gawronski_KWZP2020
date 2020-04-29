@@ -12,12 +12,16 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class sysdiagrams
+    public partial class Zawartosc
     {
-        public string name { get; set; }
-        public int principal_id { get; set; }
-        public int diagram_id { get; set; }
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        public int ID_Zawartosc { get; set; }
+        public Nullable<int> ID_Polka { get; set; }
+        public Nullable<int> ID_Element { get; set; }
+        public Nullable<int> ID_Dostawy { get; set; }
+        public Nullable<int> Ilosc_Paczek { get; set; }
+    
+        public virtual Elementy Elementy { get; set; }
+        public virtual Polki Polki { get; set; }
+        public virtual Zamowienia_Dostawy Zamowienia_Dostawy { get; set; }
     }
 }

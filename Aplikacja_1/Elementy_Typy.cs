@@ -12,18 +12,18 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Rodzaj_Dokumentacji
+    public partial class Elementy_Typy
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Rodzaj_Dokumentacji()
+        public Elementy_Typy()
         {
-            this.Dokumentacje = new HashSet<Dokumentacje>();
+            this.Elementy = new HashSet<Elementy>();
         }
     
-        public int ID_Rodzaj_Dokumentacji { get; set; }
-        public string Nazwa { get; set; }
+        public int ID_Element_Typ { get; set; }
+        public string Typ { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Dokumentacje> Dokumentacje { get; set; }
+        public virtual ICollection<Elementy> Elementy { get; set; }
     }
 }

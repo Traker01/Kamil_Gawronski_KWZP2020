@@ -12,21 +12,21 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Miejsca
+    public partial class Miejsca
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Magazyn_Miejsca()
+        public Miejsca()
         {
-            this.Magazyn_Dostarczenia_Wewn = new HashSet<Magazyn_Dostarczenia_Wewn>();
-            this.Magazyn_Dostarczenia_Zewn = new HashSet<Magazyn_Dostarczenia_Zewn>();
+            this.Dostarczenia_Wewn = new HashSet<Dostarczenia_Wewn>();
+            this.Dostarczenia_Zewn = new HashSet<Dostarczenia_Zewn>();
         }
     
-        public string ID_Miejsca { get; set; }
+        public int ID_Miejsca { get; set; }
         public string Nazwa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Magazyn_Dostarczenia_Wewn> Magazyn_Dostarczenia_Wewn { get; set; }
+        public virtual ICollection<Dostarczenia_Wewn> Dostarczenia_Wewn { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Magazyn_Dostarczenia_Zewn> Magazyn_Dostarczenia_Zewn { get; set; }
+        public virtual ICollection<Dostarczenia_Zewn> Dostarczenia_Zewn { get; set; }
     }
 }

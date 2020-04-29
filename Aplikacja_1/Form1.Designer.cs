@@ -32,6 +32,7 @@
             this.button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textButtonLable = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // checkButtonEnable
@@ -51,8 +52,9 @@
             this.button.Name = "button";
             this.button.Size = new System.Drawing.Size(212, 23);
             this.button.TabIndex = 1;
-            this.button.Text = "Change Me";
+            this.button.Text = "Szukaj";
             this.button.UseVisualStyleBackColor = true;
+            this.button.Click += new System.EventHandler(this.button_Click);
             // 
             // label1
             // 
@@ -71,13 +73,22 @@
             this.textButtonLable.Name = "textButtonLable";
             this.textButtonLable.Size = new System.Drawing.Size(257, 22);
             this.textButtonLable.TabIndex = 3;
-            this.textButtonLable.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(80, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(196, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Szukaj pracownika (nazwisko)";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(368, 345);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.textButtonLable);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button);
@@ -95,6 +106,7 @@
         private System.Windows.Forms.Button button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textButtonLable;
+        private System.Windows.Forms.Label label2;
     }
 }
 

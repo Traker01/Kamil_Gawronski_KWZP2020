@@ -12,18 +12,19 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Elementy_Typy
+    public partial class Polki
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Magazyn_Elementy_Typy()
+        public Polki()
         {
-            this.Magazyn_Elementy = new HashSet<Magazyn_Elementy>();
+            this.Zawartosc = new HashSet<Zawartosc>();
         }
     
-        public int ID_Element_Typ { get; set; }
-        public string Typ { get; set; }
+        public int ID_Polka { get; set; }
+        public Nullable<int> ID_Rozmiar_Polki { get; set; }
     
+        public virtual Polki_Rozmiary Polki_Rozmiary { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Magazyn_Elementy> Magazyn_Elementy { get; set; }
+        public virtual ICollection<Zawartosc> Zawartosc { get; set; }
     }
 }

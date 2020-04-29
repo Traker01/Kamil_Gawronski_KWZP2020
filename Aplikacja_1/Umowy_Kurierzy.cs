@@ -12,15 +12,23 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Umowy_Kurierzy
+    public partial class Umowy_Kurierzy
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Umowy_Kurierzy()
+        {
+            this.Zamowienia_Przydzial = new HashSet<Zamowienia_Przydzial>();
+        }
+    
         public int ID_Umowy { get; set; }
-        public string ID_Kurier { get; set; }
+        public Nullable<int> ID_Kurier { get; set; }
         public Nullable<System.DateTime> Data_Zawarcia { get; set; }
-        public Nullable<System.TimeSpan> Czas_Dostawy { get; set; }
+        public Nullable<int> Czas_Dostawy { get; set; }
         public Nullable<int> Koszt_Km { get; set; }
         public Nullable<int> Koszt_Staly { get; set; }
     
-        public virtual Magazyn_Kurierzy Magazyn_Kurierzy { get; set; }
+        public virtual Kurierzy Kurierzy { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Zamowienia_Przydzial> Zamowienia_Przydzial { get; set; }
     }
 }

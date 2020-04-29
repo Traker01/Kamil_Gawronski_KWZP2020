@@ -14,6 +14,7 @@ namespace Aplikacja_1
     
     public partial class Maszyny_Proces
     {
+        public int ID_Maszyny_Proces { get; set; }
         public int ID_Proces_Technologiczny { get; set; }
         public int ID_Rodzaj_Maszyny { get; set; }
         public int Liczba { get; set; }

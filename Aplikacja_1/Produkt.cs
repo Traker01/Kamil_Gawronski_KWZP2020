@@ -12,21 +12,18 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Zamowienia_Dostawy
+    public partial class Produkt
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Magazyn_Zamowienia_Dostawy()
+        public Produkt()
         {
-            this.Magazyn_Dostarczenia_Wewn = new HashSet<Magazyn_Dostarczenia_Wewn>();
+            this.Zamowienie_Produkt = new HashSet<Zamowienie_Produkt>();
         }
     
-        public int ID_Dostawy { get; set; }
-        public Nullable<int> ID_Zamowienia { get; set; }
-        public string Data_Dostawy_Planowana { get; set; }
-        public string Data_Dostawy_Rzeczywista { get; set; }
+        public int ID_Produkt { get; set; }
+        public string Nazwa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Magazyn_Dostarczenia_Wewn> Magazyn_Dostarczenia_Wewn { get; set; }
-        public virtual Zamowienia Zamowienia { get; set; }
+        public virtual ICollection<Zamowienie_Produkt> Zamowienie_Produkt { get; set; }
     }
 }

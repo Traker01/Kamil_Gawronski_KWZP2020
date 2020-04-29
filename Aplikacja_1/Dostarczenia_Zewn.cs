@@ -12,16 +12,17 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Obsluga_Techniczna
+    public partial class Dostarczenia_Zewn
     {
-        public int ID_Obslugi { get; set; }
-        public int ID_Maszyny { get; set; }
-        public int ID_Rodzaj_Obslugi { get; set; }
-        public System.DateTime Data_Wykonania { get; set; }
-        public int ID_Pracownika { get; set; }
+        public int ID_Dostarczenia { get; set; }
+        public Nullable<int> ID_Pracownicy { get; set; }
+        public Nullable<int> ID_Zamowienia { get; set; }
+        public Nullable<double> Ilosc_Dostarczona { get; set; }
+        public Nullable<int> ID_Miejsca { get; set; }
+        public string Data_Dostarczenia { get; set; }
     
-        public virtual Maszyny Maszyny { get; set; }
+        public virtual Miejsca Miejsca { get; set; }
         public virtual Pracownicy Pracownicy { get; set; }
-        public virtual Rodzaj_Obslugi Rodzaj_Obslugi { get; set; }
+        public virtual Zamowienia Zamowienia { get; set; }
     }
 }

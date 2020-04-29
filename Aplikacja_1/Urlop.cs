@@ -12,11 +12,13 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Polki
+    public partial class Urlop
     {
-        public string ID_Polka { get; set; }
-        public string ID_Rozmiar_Polki { get; set; }
+        public int ID_Urlop { get; set; }
+        public Nullable<int> ID_Pracownika { get; set; }
+        public System.DateTime Data_rozpoczęcia { get; set; }
+        public System.DateTime Data_zakonczenia { get; set; }
     
-        public virtual Magazyn_Polki_Rozmiary Magazyn_Polki_Rozmiary { get; set; }
+        public virtual Pracownicy Pracownicy { get; set; }
     }
 }

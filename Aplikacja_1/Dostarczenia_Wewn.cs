@@ -12,17 +12,17 @@ namespace Aplikacja_1
     using System;
     using System.Collections.Generic;
     
-    public partial class Magazyn_Dostarczenia_Zewn
+    public partial class Dostarczenia_Wewn
     {
         public int ID_Dostarczenia { get; set; }
         public Nullable<int> ID_Pracownicy { get; set; }
-        public Nullable<int> ID_Zamowienia { get; set; }
+        public Nullable<int> ID_Dostawy { get; set; }
         public Nullable<double> Ilosc_Dostarczona { get; set; }
-        public string ID_Miejsca { get; set; }
+        public Nullable<int> ID_Miejsca { get; set; }
         public string Data_Dostarczenia { get; set; }
     
-        public virtual Magazyn_Miejsca Magazyn_Miejsca { get; set; }
+        public virtual Zamowienia_Dostawy Zamowienia_Dostawy { get; set; }
+        public virtual Miejsca Miejsca { get; set; }
         public virtual Pracownicy Pracownicy { get; set; }
-        public virtual Zamowienia Zamowienia { get; set; }
     }
 }
